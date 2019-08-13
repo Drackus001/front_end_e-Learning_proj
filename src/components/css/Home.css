@@ -1,0 +1,117 @@
+body{ 
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+body img{
+    height: 100vh;
+    width: 100%;
+
+
+}
+body .overlay{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( to bottom right , #d442f5b7 , #410082b7);
+    position: absolute;
+    top: 0%;
+}
+header{
+    
+    background-color: rgba(0, 0, 0, 0.541);
+    padding-top: 0%;
+    margin-top: 0%;
+    position: absolute;
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    
+}
+header .user{
+    position: relative;
+    right: -90%; 
+    color: white;  
+}
+header .logo-title{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 40px;
+}
+section{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    max-height: 90vh;
+    max-width: 100vw;
+    padding-top: 150px;
+    
+}
+section .container a{
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+}
+section .container{
+    display: grid;
+    grid-template-areas: "a a a";
+    grid-gap: 50px 150px;
+    grid-auto-rows: auto;
+}
+section .container .boxstyle{
+    width: 200px;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 25px;
+    
+}
+section .container .boxstyle .content{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+section .container .box-1{
+    background: linear-gradient(135deg, rgba(241,231,103,0.7) 0%, rgba(254,182,69,0.7) 100%);   
+}
+section .container .box-1:hover{
+    background: linear-gradient(45deg, rgba(241,231,103,0.7) 0%, rgba(254,182,69,0.7) 100%); 
+}
+
+
+section .container .box-2{
+    background: linear-gradient(135deg, rgba(210,255,82,0.7) 0%, rgba(90,186,0,0.7) 100%);
+}
+section .container .box-2:hover{
+    background: linear-gradient(45deg, rgba(210,255,82,0.7) 0%, rgba(90,186,0,0.7) 100%);
+}
+
+
+section .container .box-3{
+    background: linear-gradient(135deg, rgba(73,155,234,0.7) 0%, rgba(10, 91, 184, 0.7) 100%);
+}
+section .container .box-3:hover{
+    background: linear-gradient(45deg, rgba(73,155,234,0.7) 0%, rgba(10, 91, 184, 0.7) 100%);
+}
+
+
+section .container .box-4{
+    background: linear-gradient(135deg, rgba(132,0,255,0.7) 0%, rgba(93,0,143,0.7) 100%);
+}
+section .container .box-4:hover{
+    background: linear-gradient(45deg, rgba(132,0,255,0.7) 0%, rgba(93,0,143,0.7) 100%);
+}
+
+
+section .container .box-5{
+    background: linear-gradient(135deg, rgba(255,74,240,0.7) 0%, rgba(176,0,135,0.7) 100%)
+}
+section .container .box-5:hover{
+    background: linear-gradient(45deg, rgba(255,74,240,0.7) 0%, rgba(176,0,135,0.7) 100%)
+}
