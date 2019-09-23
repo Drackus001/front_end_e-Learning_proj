@@ -31,7 +31,7 @@ header{
 }
 header .user{
     position: relative;
-    right: -90%; 
+    right: -85vw; 
     color: white;  
 }
 header .logo-title{
@@ -114,4 +114,54 @@ section .container .box-5{
 }
 section .container .box-5:hover{
     background: linear-gradient(45deg, rgba(255,74,240,0.7) 0%, rgba(176,0,135,0.7) 100%)
+}
+
+@media (max-width: 1000px){
+    header .user{
+        position: relative;
+        right: -75vw; 
+        color: white;  
+    }
+
+    section .container{
+    display: grid;
+    grid-template-areas: "a a";
+    grid-gap: 50px 150px;
+    grid-auto-rows: auto;
+    }
+    body img{
+        height: 130vh;
+        width: 100%;
+    }
+    body .overlay{
+        height: 130vh;
+        width: 100%;
+        background-image: linear-gradient( to bottom right , #d442f5b7 , #410082b7);
+        position: absolute;
+        top: 0%;
+    }
+}
+@media (max-width: 550px){
+    header .user{
+        position: relative;
+        right: -70vw; 
+        color: white;  
+    }
+    section .container{
+    display: grid;
+    grid-template-areas: "a";
+    grid-gap: 50px 150px;
+    grid-auto-rows: auto;
+    }
+    body img{
+        height: 210vh;
+        width: 100%;
+    }
+    body .overlay{
+        height: 210vh;
+        width: 100%;
+        background-image: linear-gradient( to bottom right , #d442f5b7 , #410082b7);
+        position: absolute;
+        top: 0%;
+    }
 }

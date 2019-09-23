@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import './css/Home.css'
-import './css/style.css'
+import './css/login.css'
 import temple from './res/temple1.jpg'
 import Home from './Home'
 
@@ -37,7 +37,7 @@ class Login extends Component {
         const { username, password } = this.state
         return (
             <div>
-                <imgage src={temple} alt="temple image" />
+                <img src={temple} alt="temple img" />
                 <form onSubmit={this.login} className="form">
                     <div className="container">
                         <div className="logo-guestlogin">

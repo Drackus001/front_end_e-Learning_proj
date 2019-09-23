@@ -1,0 +1,184 @@
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url('../res/temple1.jpg');
+    background-image: linear-gradient( to bottom right , #d442f5 , #410082);
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+body .form{
+
+    padding: 1em;
+}
+body .form p{
+    color: lightslategray;
+    max-width: 250px;
+    font-size: .9em;
+}
+body .form .btn-login{
+    background: orangered;
+    color: white;
+    border: none;
+    padding: .5rem 1.2em;
+    border-radius: 20px;
+    font-size: 15px;
+}
+body .form .btn-login:hover{
+    background: orange;
+}
+body .form .btn-login i{
+    padding-left: 5px;
+}
+body .form input{
+    margin: 5px 5px;
+    
+    height: 30px;
+}
+.container{
+    border-radius: 25px;
+    background: white;
+    width: 45%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    left: 27%;
+    top: 10%;
+}
+.container .logo-guestlogin{
+    width: 50%;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.container .regularlogin{
+    width: 50%;
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+}
+.container .regularlogin .inputs{
+    width: 90%;
+    padding-left: 5%;
+    border-radius: 20px;
+    
+}
+
+.container .regularlogin .Forgot{
+    text-decoration: none;
+    color: lightslategray;
+    font-size: .9em;
+    padding-left: 50%;
+    width: 100%
+}
+.container .regularlogin .Forgot:hover{
+    color: orangered;
+}
+.container span{
+    content: ' ';
+    height: 200px;
+    width: 2px;
+    background-color: orangered;
+    margin-right: 6%;
+}
+
+
+@media (max-width:950px) {
+    .container{
+    border-radius: 25px;
+    background: white;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    }
+    .container .regularlogin{
+        width: 70%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        
+    }
+    .container .regularlogin .Forgot{
+        text-decoration: none;
+        color: lightslategray;
+        font-size: .9rem;
+        width: 100%;
+        float: right;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    .container span{
+        content: ' ';
+        height: 200px;
+        width: 2px;
+        background-color: orangered;
+        margin-right: 6%;
+    }
+    
+}
+
+@media (max-width:550px) {
+    .container{
+        border-radius: 25px;
+        background: white;
+        width: 60vw;
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "a";
+        position: absolute;
+        left: 20%;
+        
+    }
+    .container span{
+        content: ' ';
+        height: 1px;
+        width: 80%;
+        margin-left: 2%;
+        position: relative;
+        background-color: orangered;
+        
+    }
+    .container .logo-guestlogin{
+        width: 70%;
+        position: relative;
+        display: grid;
+        grid-template-areas: 'a';
+        margin-bottom: none;
+    }
+    .container .regularlogin{
+        width: 70%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    .container .regularlogin .inputs{
+        width: 90%;
+        float: left;
+        border-radius: 20px;   
+    }
+    .container .regularlogin .Forgot{
+        text-decoration: none;
+        color: lightslategray;
+        font-size: .9rem;
+        width: 100%;
+        float: right;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+}

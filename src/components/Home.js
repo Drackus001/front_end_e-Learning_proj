@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './css/Home.css'
-import './css/style.css'
 import temple from './res/temple1.jpg'
 
 class Home extends Component {
