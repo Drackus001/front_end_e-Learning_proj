@@ -8,14 +8,14 @@ class Home extends Component {
     render() {
         return (
 
-            <div>
+            <div >
                 <img src={temple} alt="" />
                 <div className={styles.overlay}>
                     <header>
                         <Link to="/" className={styles.logo_title}>
                             {/* <a href="index.html" className="logo-title"> */}
-                            Logo
-                        {/* </a> */}
+                            <h1>Logo</h1>
+                            {/* </a> */}
                         </Link>
                         <Link to='/home' className={styles.user}>
                             <i className="fas fa-user-circle fa-2x">home</i>
