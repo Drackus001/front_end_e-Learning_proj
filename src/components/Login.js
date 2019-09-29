@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom';
 
 import './css/Home.css'
-import './css/login.css'
+//import './css/login.css'
 import temple from './res/temple1.jpg'
-import Home from './Home'
+
 
 class Login extends Component {
 
@@ -42,7 +43,9 @@ class Login extends Component {
                     <div className="container">
                         <div className="logo-guestlogin">
                             <h1>logo</h1>
-                            <a href={<Home />} className=''><button type='button' className="btn-login">Guest Login</button></a>
+                            <Link to='/home'>
+                            <button type='button' className="btn-login">Guest Login</button>
+                            </Link>
 
                         </div>
                         <span></span>
@@ -51,8 +54,13 @@ class Login extends Component {
                             <p>Please enter your username and password to login.</p>
                             <input type="text" value={username} onChange={this.handleUserNameChange} name="username" placeholder="Username" id="username" className="inputs" /><br />
                             <input type="password" value={password} onChange={this.handlePasswordChange} name="password" placeholder="Password" id="password" className="inputs" /><br />
-                            <a href={<Home />} className="Forgot">Forgot Password?</a>
+                            <Link to='/' className="Forgot">
+                                Forgot Password?
+                            </Link>
+
+                            <Link to='/home'>
                             <button type='submit' className="btn-login">Login <i className="fas fa-long-arrow-alt-right"></i></button>
+                            </Link>
 
                         </div>
                     </div>
