@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './components/Home'
 import Login from './components/Login';
 import Categories from './components/Categories';
+import Nav from './components/LeftNavBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' exact component={Login} />
           <Route path='/home' exact component={Home} />
           <Route path='/home/audio' component={Categories} />
+          <Route path='/nav' component={Nav} />
           {/* <Route path='/home/video' exact component={Categories} />
           <Route path='/home/ebooks' exact component={Categories} />
           <Route path='/home/training' exact component={Categories} />

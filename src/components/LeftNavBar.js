@@ -1,41 +1,59 @@
 import React from 'react';
+//import styles from './css/leftnavbar.module.css'
 import './css/leftnavbar.css'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 const LeftNavBar = () => {
-    return (
-        <div className="leftnav">
-        <img src="res/LOGO.png" alt="LOGO" className="logopng"/>
-        <ul className="nav flex-column">
-                <li className="nav-item">
-                  <Link to='/home' className="nav-link active">
-                  <i className="fas fa-home"></i>
-                  Home
-                  </Link>
-                  {/* <a className="nav-link active" href="Home.html"><i className="fas fa-home"></i>Home</a> */}
-                </li>
-                <li className="nav-item">
-                <Link to='/Categories' className="nav-link">
-                  <i className="fas fa-home"></i>
-                  Search
-                  </Link>
-                  {/* <a className="nav-link" href="#"><i className="fas fa-search"></i>Search</a> */}
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="home.html"><i className="fas fa-star"></i>Favorite</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="home.html"><i className="fas fa-list"></i>Playlist</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="home.html"><i className="fas fa-history"></i>History</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="home.html"><i className="fas fa-sign-out-alt"></i>Logout</a>
-                </li>
-              </ul>
+  return (
+    <div className="leftnav">
+      <img src="res/LOGO.png" alt="LOGO" className="logopng" />
+      <ul className="nav flex-column">
+        <li className="nav-item">
+          <Link to='/home' className="nav-link active">
+            <i className="fas fa-home"></i>
+            Home
+          </Link>
+
+        </li>
+        <li className="nav-item">
+          <Link to='/search' className="nav-link">
+            <i className="fas fa-home"></i>
+            Search
+          </Link>
+
+        </li>
+        <li className="nav-item">
+          <Link to='/favourite' className="nav-link">
+            <i className="fas fa-star"></i>
+            Favorite
+          </Link>
+
+        </li>
+        <li className="nav-item">
+          <Link to='/playlist' className="nav-link">
+            <i className="fas fa-list"></i>
+            Playlist
+          </Link>
+
+        </li>
+        <li className="nav-item">
+          <Link to='/history' className="nav-link">
+            <i className="fas fa-history"></i>
+            History
+          </Link>
+
+        </li>
+        <li className="nav-item">
+          <Link to='/logout' className="nav-link">
+            <i className="fas fa-sign-out-alt"></i>
+            Logout
+          </Link>
+
+        </li>
+      </ul>
     </div>
-    
-    );
+
+  );
 }
 
 export default LeftNavBar;
