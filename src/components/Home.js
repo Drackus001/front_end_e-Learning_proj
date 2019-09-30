@@ -18,7 +18,7 @@ class Home extends Component {
                             {/* </a> */}
                         </Link>
                         <Link to='/home' className={styles.user}>
-                            <i className="fas fa-user-circle fa-2x">home</i>
+                            <i className="fas fa-user-circle fa-2x" />
                         </Link>
                         {/* <a href="Home.html" className="user"><i className="fas fa-user-circle fa-2x"></i></a> */}
                     </header>
