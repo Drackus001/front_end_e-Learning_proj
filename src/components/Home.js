@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styles from './css/home.module.css'
 import { Link } from 'react-router-dom';
 
-import temple from './res/temple1.jpg'
+import temple from './res/temple1.jpg';
 
 class Home extends Component {
     render() {

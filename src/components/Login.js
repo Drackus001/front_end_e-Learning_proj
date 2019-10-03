@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
 //import './css/Home.css'
-import styles from './css/login.module.css'
-import temple from './res/temple1.jpg'
+import './css/login.module.css'
+import temple from './res/temple.jpg';
 import logo from './res/LOGO.png'
 
 
@@ -39,28 +39,30 @@ class Login extends Component {
         const { username, password } = this.state
         return (
 
-            <div className="col-md-8" style={styles.middlePage}>
-                <div className={styles.panel}>
-                    <div className={styles.panel_body}>
-                        <div className="row">
-                            <div className="col-md-5 text-center " style={styles.guest_login}>
-                                {/* <img src={logo} alt="LOGO" /><br /> */}
-                                <button className="btn btn-danger rounded-pill btn-sm">Guest Login</button>
-                            </div>
+            <div>
+                <div className="col-md-8 middlePage">
+                    <div className="panel">
+                        <div className="panel_body">
+                            <div className="row">
+                                <div className="col-md-5 text-center guest_login">
+                                    {/* <img src={logo} alt="LOGO" /><br /> */}
+                                    <button className="btn btn-danger rounded-pill btn-sm">Guest Login</button>
+                                </div>
 
-                            <div className={"col-md-7" + styles.regular_login}>
-                                <form className="form-horizontal">
-                                    <p>Please enter your username and password to login.</p>
-                                    <input id="textinput" name="textinput" type="text" placeholder="Enter User Name"
-                                        className="form-control rounded-pill input-md" /> <br />
-                                    <input id="textinput" name="textinput" type="text" placeholder="Enter Password"
-                                        className="form-control rounded-pill input-md" /> <br />
-                                    <div className="spacing forgot"><Link to="/"><small> Forgot Password?</small></Link></div>
-                                    <button id="sign-in" name="sign-in" className="btn btn-danger pull-right rounded-pill">Sign In</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                                <div className="col-md-7 regular_login">
+                                    <form className="form-horizontal">
+                                        <p>Please enter your username and password to login.</p>
+                                        <input id="textinput" name="textinput" type="text" placeholder="Enter User Name"
+                                            className="form-control rounded-pill input-md" /> <br />
+                                        <input id="textinput" name="textinput" type="text" placeholder="Enter Password"
+                                            className="form-control rounded-pill input-md" /> <br />
+                                        <div className="spacing forgot"><Link to="/"><small> Forgot Password?</small></Link></div>
+                                        <Link to="/home"> <button id="sign-in" name="sign-in" className="btn btn-danger pull-right rounded-pill" >Sign In</button> </Link>
+                                    </form>
+                                </div>
+                            </div >
+                        </div >
+                    </div >
                 </div >
             </div >
 
