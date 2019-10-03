@@ -1,12 +1,13 @@
 import React from 'react';
 //import styles from './css/leftnavbar.module.css'
 import './css/leftnavbar.css'
+import logo from './res/LOGO.png'
 import { Link } from 'react-router-dom';
 
 const LeftNavBar = () => {
   return (
     <div className="leftnav">
-      <img src="res/LOGO.png" alt="LOGO" className="logopng" />
+      <img src={logo} alt="LOGO" className="logopng" />
       <ul className="nav flex-column">
         <li className="nav-item">
           <Link to='/home' className="nav-link active">

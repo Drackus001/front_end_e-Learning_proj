@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 //import './css/Home.css'
 import styles from './css/login.module.css'
 import temple from './res/temple1.jpg'
+import logo from './res/LOGO.png'
 
 
 class Login extends Component {
@@ -37,35 +38,62 @@ class Login extends Component {
     render() {
         const { username, password } = this.state
         return (
-            <div>
-                <img src={temple} alt="temple img" />
-                <form onSubmit={this.login} className={styles.form}>
-                    <div className={styles.container}>
-                        <div className={styles.logo_guestlogin}>
-                            <h1>logo</h1>
-                            <Link to='/home'>
-                                <button type='button' className={styles.btn_login}>Guest Login</button>
-                            </Link>
 
-                        </div>
-                        <span></span>
-                        <div className={styles.regularlogin}>
+            <div className="col-md-8" style={styles.middlePage}>
+                <div className={styles.panel}>
+                    <div className={styles.panel_body}>
+                        <div className="row">
+                            <div className="col-md-5 text-center " style={styles.guest_login}>
+                                {/* <img src={logo} alt="LOGO" /><br /> */}
+                                <button className="btn btn-danger rounded-pill btn-sm">Guest Login</button>
+                            </div>
 
-                            <p>Please enter your username and password to login.</p>
-                            <input type="text" value={username} onChange={this.handleUserNameChange} name="username" placeholder="Username" id="username" className={styles.inputs} /><br />
-                            <input type="password" value={password} onChange={this.handlePasswordChange} name="password" placeholder="Password" id="password" className={styles.inputs} /><br />
-                            <Link to='/' className={styles.Forgot}>
-                                Forgot Password?
-                            </Link>
-
-                            <Link to='/home'>
-                                <button type='submit' className={styles.btn_login}>Login <i className="fas fa-long-arrow-alt-right"></i></button>
-                            </Link>
-
+                            <div className={"col-md-7" + styles.regular_login}>
+                                <form className="form-horizontal">
+                                    <p>Please enter your username and password to login.</p>
+                                    <input id="textinput" name="textinput" type="text" placeholder="Enter User Name"
+                                        className="form-control rounded-pill input-md" /> <br />
+                                    <input id="textinput" name="textinput" type="text" placeholder="Enter Password"
+                                        className="form-control rounded-pill input-md" /> <br />
+                                    <div className="spacing forgot"><Link to="/"><small> Forgot Password?</small></Link></div>
+                                    <button id="sign-in" name="sign-in" className="btn btn-danger pull-right rounded-pill">Sign In</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </form>
-            </div>
+                </div >
+            </div >
+
+
+            // <div>
+            //     <img src={temple} alt="temple img" />
+            //     <form onSubmit={this.login} className={styles.form}>
+            //         <div className={styles.container}>
+            //             <div className={styles.logo_guestlogin}>
+            //                 <h1>logo</h1>
+            //                 <Link to='/home'>
+            //                     <button type='button' className={styles.btn_login}>Guest Login</button>
+            //                 </Link>
+
+            //             </div>
+            //             <span></span>
+            //             <div className={styles.regularlogin}>
+
+            //                 <p>Please enter your username and password to login.</p>
+            //                 <input type="text" value={username} onChange={this.handleUserNameChange} name="username" placeholder="Username" id="username" className={styles.inputs} /><br />
+            //                 <input type="password" value={password} onChange={this.handlePasswordChange} name="password" placeholder="Password" id="password" className={styles.inputs} /><br />
+            //                 <Link to='/' className={styles.Forgot}>
+            //                     Forgot Password?
+            //                 </Link>
+
+            //                 <Link to='/home'>
+            //                     <button type='submit' className={styles.btn_login}>Login <i className="fas fa-long-arrow-alt-right"></i></button>
+            //                 </Link>
+
+            //             </div>
+            //         </div>
+            //     </form>
+            // </div>
         )
     }
 }
