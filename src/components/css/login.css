@@ -1,0 +1,65 @@
+/*   
+  background-image: url('../res/temple1.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+body {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* The image used */
+  background-image: url("../res/temple1.jpg");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+
+  margin-left: 17%;
+  max-width: 100%;
+}
+
+.guest-login {
+  margin-top: 10%;
+}
+
+.regular-login {
+  border-left: 1px solid rgb(255, 136, 0);
+  height: 60%;
+  padding: 1rem;
+}
+
+.regular-login p {
+  color: rgb(141, 141, 141);
+  font-size: .8rem;
+}
+
+.regular-login .forgot {
+  float: right;
+
+}
+
+@media(max-width:768px) {
+  .regular-login {
+    border-left: none;
+    border-top: 1px solid rgb(255, 136, 0);
+
+  }
+
+  .guest-login {
+    margin-top: -2%;
+    margin-bottom: 1rem;
+  }
+
+}

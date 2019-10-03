@@ -1,9 +1,10 @@
 import React from 'react';
-// import './App.css'; 
+// import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home'
 import Login from './components/Login';
 import Categories from './components/Categories';
-import Nav from './components/LeftNavBar';
+import Nav from './components/layouts/LeftNavBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {

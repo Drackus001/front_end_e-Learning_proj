@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './css/categories.module.css'
 import temple from './res/temple1.jpg';
-import LeftNav from './LeftNavBar';
+import LeftNav from './layouts/LeftNavBar';
 import { Link } from 'react-router-dom';
 const Categories = () => {
     return (

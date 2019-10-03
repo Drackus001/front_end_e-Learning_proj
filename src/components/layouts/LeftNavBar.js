@@ -1,7 +1,8 @@
 import React from 'react';
 //import styles from './css/leftnavbar.module.css'
-import './css/leftnavbar.css'
-import logo from './res/LOGO.png'
+import '../css/leftnavbar.module.css'
+import { styled } from 'styled-components'
+import logo from '../res/LOGO.png'
 import { Link } from 'react-router-dom';
 
 const LeftNavBar = () => {
@@ -58,3 +59,5 @@ const LeftNavBar = () => {
 }
 
 export default LeftNavBar;
+
+

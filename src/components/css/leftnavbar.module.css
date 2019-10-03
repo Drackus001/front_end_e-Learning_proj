@@ -1,16 +1,18 @@
-body{
+body {
     margin: 0%;
     padding: 0%;
-    background: lightgray;
+    background-color: grey;
     font-family: sans-serif;
 }
-.logopng{
+
+.logopng {
     height: 6.5rem;
     width: 5.5rem;
     margin-left: 1.2rem;
     margin-top: 1.2rem;
 }
-.leftnav{
+
+.leftnav {
     background: rgb(16, 23, 34);
     height: 100vh;
     width: 15vw;
@@ -20,19 +22,22 @@ body{
 }
 
 
-.leftnav .nav li i{
+.leftnav .nav li i {
     margin-right: 10px;
 }
-.leftnav .nav li{
+
+.leftnav .nav li {
     margin: 10px 5px;
     font-size: 1.2rem;
     text-align: center;
 }
-.nav li a{
+
+.nav li a {
     color: white;
     text-decoration: none;
 }
-.nav li a:hover{
+
+.nav li a:hover {
     color: rgb(255, 115, 0);
     text-decoration: none;
 }
