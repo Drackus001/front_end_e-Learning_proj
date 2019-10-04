@@ -1,15 +1,16 @@
 import React from 'react';
-//import styles from './css/leftnavbar.module.css'
-import '../css/leftnavbar.module.css'
+
+import styles from '../css/leftnavbar.module.css'
 import { styled } from 'styled-components'
 import logo from '../res/LOGO.png'
 import { Link } from 'react-router-dom';
 
+const flex = 'flex-column'
 const LeftNavBar = () => {
   return (
-    <div className="leftnav">
-      <img src={logo} alt="LOGO" className="logopng" />
-      <ul className="nav flex-column">
+    <div className={styles.leftnav}>
+      <img src={logo} alt="LOGO" className={styles.logopng} />
+      <ul className={styles.nav + ' ' + flex}>
         <li className="nav-item">
           <Link to='/home' className="nav-link active">
             <i className="fas fa-home"></i>
@@ -53,7 +54,7 @@ const LeftNavBar = () => {
 
         </li>
       </ul>
-    </div>
+    </div >
 
   );
 }
