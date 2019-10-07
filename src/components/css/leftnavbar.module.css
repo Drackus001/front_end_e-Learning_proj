@@ -1,7 +1,7 @@
 body {
     margin: 0%;
     padding: 0%;
-    background-color: grey;
+
     font-family: sans-serif;
 }
 
@@ -13,9 +13,10 @@ body {
 }
 
 .leftnav {
+    position: absolute;
     background: rgb(16, 23, 34);
     height: 100vh;
-    width: 15vw;
+    width: 20vw;
     display: grid;
     grid-template-areas: "a";
     justify-content: center;
@@ -27,9 +28,10 @@ body {
 }
 
 .leftnav .nav li {
-    margin: 10px 5px;
     font-size: 1.2rem;
     text-align: center;
+    list-style-type: none;
+    padding: 1rem;
 }
 
 .nav li a {
@@ -39,5 +41,5 @@ body {
 
 .nav li a:hover {
     color: rgb(255, 115, 0);
-    text-decoration: none;
+
 }
